@@ -160,9 +160,9 @@
           <span class="material-icons-round"> multiple_stop </span>
           <div class="tooltip">판매상태변경</div>
         </button>
-        <button>
-          <span class="material-icons-round"> redeem </span>
-          <div class="tooltip">상품수정</div>
+        <button class="submit">
+          <span class="material-icons-round"> send </span>
+          <div class="tooltip">상품전송</div>
         </button>
         <button class="danger">
           <span class="material-icons-round"> delete </span>
@@ -487,7 +487,10 @@
           &.danger span {
             color: tomato;
           }
-
+          &.submit span {
+            color: $accent-color;
+          }
+          
           &.toggle-search-filter span {
             color: $accent-color;
           }

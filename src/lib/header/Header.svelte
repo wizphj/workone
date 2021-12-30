@@ -1,6 +1,5 @@
 <script>
   import workoneLogo from "./workone-logo.svg";
-  import telegramLogo from "./telegram-logo.svg";
   import { page } from "$app/stores";
   import { headerMenuLists } from "$lib/store";
 
@@ -51,7 +50,7 @@
   <!-- 우측 코너 : 추가 메뉴 (아이콘 링크) -->
   <div class="corner right">
     <span class="link-icon-box">
-      <img class="svg-icon" src={telegramLogo} alt="Show messenger" />
+      <span class="link-icon-box material-icons-round"> group </span>
     </span>
     <span class="link-icon-box material-icons-round"> more_vert </span>
   </div>
@@ -67,10 +66,6 @@
   .corner {
     img.logo {
       height: 2rem;
-      padding: 0 1.6rem;
-    }
-    img.svg-icon {
-      height: 2.4rem;
       padding: 0 1.6rem;
     }
 
