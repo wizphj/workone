@@ -1,0 +1,57 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+html {    
+    margin: 0;       
+    height:100%;
+    font-size: 10px;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;  
+}
+
+body {    
+    position: relative;
+    background-color: $gray-04;
+    overflow: hidden;
+    height:100%;
+}
+
+//머티리얼 아이콘
+.material-icons-round {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.4rem;
+    color: $white;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+// 스크롤
+::-webkit-scrollbar {
+    width: .8rem;
+    height: .8rem;
+  }
+::-webkit-scrollbar-thumb {
+    background-color: $gray-06;
+    border-radius: .8rem;
+    background-clip: padding-box;
+  }
+::-webkit-scrollbar-track {
+    background-color: $gray-03;
+    border-radius: 10px;
+  }
